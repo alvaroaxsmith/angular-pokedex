@@ -6,8 +6,10 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./pokemon-card.component.scss']
 })
 export class PokemonCardComponent {
-  @Input() pokemon: string | undefined;
-  @Input() index: number | undefined;
+  @Input()
+  pokemon!: string | any;
+  @Input()
+  index!: number;
 
   getImagePokemon() {
     return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${this.index}.png`;
