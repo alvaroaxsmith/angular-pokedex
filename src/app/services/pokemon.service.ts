@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class PokemonService {
-  pokemons = [];
+
   constructor(private httpClient: HttpClient) {}
 
   getPokemons(): any {
